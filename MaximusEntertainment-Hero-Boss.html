@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="maxim_pochyba" />
+    <title>MaximusEntertainment</title>
+    <link rel="stylesheet" href="Entertainment-Hero-Boss.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") x.style.display = "none";
+        else x.style.display = "block";
+      }
+      function toggleDantesGameDropdown() {
+        var dropdown = document.getElementById("dantesGameDropdown");
+        if (dropdown.style.display === "block") dropdown.style.display = "none";
+        else dropdown.style.display = "block";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- NAV for MOBILE -->
+    <div class="mobile-container">
+      <div
+        class="topnav"
+        id="myTopnav"
+        role="navigation"
+        aria-label="mobile navigation"
+      >
+        <a href="./MaximusEntertainment.html" class="active" alt="Home">
+          <img
+            src="./LOGO/logo02.webp"
+            alt="Company Logotype"
+            class="Header_mobile_logo"
+            aria-label="Company logo"
+          />
+        </a>
+        <div id="myLinks">
+          <a
+            href="./MaximusEntertainment_OurProgress.html"
+            aria-label="Our progress"
+            >Our Progress</a
+          >
+          <button
+            class="dropbtn"
+            onclick="toggleDantesGameDropdown()"
+            aria-haspopup="true"
+            aria-controls="dantesGameDropdown"
+          >
+            Dante's Game
+          </button>
+          <div id="dantesGameDropdown" class="dropdown-content" role="menu">
+            <a
+              href="./MaximusEntertainment-GameStory.html"
+              aria-label="Game story"
+              >Game Story</a
+            >
+            <a
+              href="./MaximusEntertainment-Hero-Boss.html"
+              aria-label="Hero/Bosses"
+              >Hero/Bosses</a
+            >
+          </div>
+          <a href="./MaximusEntertainment_AboutUS.html" aria-label="About us"
+            >About Us</a
+          >
+          <a
+            href="./MaximusEntertainment-SupportUs.html"
+            aria-label="Support us"
+            >Support Us</a
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="toggleNav()"
+          role="button"
+          aria-label="Toggle menu"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- NAV for PC -->
+
+    <header role="banner">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="./MaximusEntertainment.html" class="logo-link">
+            <img
+              src="./LOGO/logo02.webp"
+              alt="Company Logotype"
+              class="Headerlogo"
+              aria-label="Company logo"
+            />
+          </a>
+        </div>
+        <div class="button-container">
+          <div class="button-group-left">
+            <a
+              class="button"
+              href="./MaximusEntertainment_OurProgress.html"
+              aria-label="Our progress"
+              >Our Progress</a
+            >
+            <div class="dropdown">
+              <button
+                class="dropbtn"
+                aria-haspopup="true"
+                aria-controls="mainDropdownContent"
+              >
+                Dante's Game
+              </button>
+              <div
+                class="dropdown-content"
+                id="mainDropdownContent"
+                role="menu"
+              >
+                <a
+                  href="./MaximusEntertainment-GameStory.html"
+                  aria-label="Game story"
+                  >Game Story</a
+                >
+                <a
+                  href="./MaximusEntertainment-Hero-Boss.html"
+                  aria-label="Hero/Bosses"
+                  >Hero/Bosses</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="button-group-right">
+            <a
+              class="button"
+              href="./MaximusEntertainment_AboutUS.html"
+              aria-label="About us"
+              >About Us</a
+            >
+            <a
+              class="button support-button"
+              href="./MaximusEntertainment-SupportUs.html"
+              aria-label="Support us"
+              >Support Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="story-main" role="main" aria-labelledby="story-header">
+      <!-- Bento Box 1 -->
+      <div class="bento-box">
+        <h1>The Hero</h1>
+        <p>
+          Born into obscurity, the Shadow Sentinel rose as a legendary figure,
+          his true name obscured by time. Clad in darkness, he wielded
+          unparalleled skill as a silent guardian against encroaching
+          shadows.<br />
+          After returning from war, tragedy struck as his wife fell to a
+          three-headed beast. With her dying words, she promised reunion in
+          heaven. Fueled by grief and rage, he confronted the creature but was
+          overwhelmed. As death loomed, he vowed to defy fate, seeking
+          redemption through the depths of hell.
+        </p>
+      </div>
+
+      <!-- Bento Box 2 -->
+      <div class="bento-box">
+        <h1>Limbo</h1>
+        <p>
+          This circle contains virtuous pagans and unbaptized infants who are
+          not condemned to punishment but are deprived of the joy of God's
+          presence due to their lack of Christian faith.
+        </p>
+      </div>
+      <!-- Bento Box 3 -->
+      <div class="bento-box">
+        <h1>Lust</h1>
+        <p>
+          Here, Dante encounters souls who were overcome by their carnal desires
+          and lustful passions, endlessly blown about by strong winds.
+        </p>
+      </div>
+
+      <!-- Bento Box 4 -->
+      <div class="bento-box">
+        <h1>Gluttony</h1>
+        <p>
+          Dante witnesses souls who are punished by being forced to lie in the
+          filthy slush of a putrid swamp, symbolizing their excessive indulgence
+          in food and drink.
+        </p>
+      </div>
+
+      <!-- Bento Box 5 -->
+      <div class="bento-box">
+        <h1>Greed</h1>
+        <p>
+          In this circle, Dante encounters souls who were consumed by avarice
+          and prodigality. They are weighed down by heavy sacks of money and
+          forced to joust with each other.
+        </p>
+      </div>
+
+      <!-- Bento Box 6 -->
+      <div class="bento-box">
+        <h1>Wrath and Sullenness</h1>
+        <p>
+          The wrathful souls fight and tear at each other on the surface of the
+          River Styx, while the sullen and melancholic souls lie submerged in
+          the muddy waters, emitting bubbles of despair.
+        </p>
+      </div>
+
+      <!-- Bento Box 7 -->
+      <div class="bento-box">
+        <h1>Heresy</h1>
+        <p>
+          Here, Dante encounters souls who held beliefs contrary to the
+          teachings of the Christian faith. They are trapped in burning tombs as
+          punishment for their defiance.
+        </p>
+      </div>
+      <!-- Bento Box 8 -->
+      <div class="bento-box">
+        <h1>Violence</h1>
+        <p>
+          This circle is divided into three rings, each representing a different
+          form of violence: violence against others, violence against oneself,
+          and violence against God, nature, or art. The punishments vary,
+          including immersion in boiling blood, being transformed into trees, or
+          being chased by wild animals.
+        </p>
+      </div>
+
+      <!-- Bento Box 9 -->
+      <div class="bento-box">
+        <h1>Fraud</h1>
+        <p>
+          This circle is also divided into ten bolgias (ditches) and punishes
+          different forms of fraud. The sins include seduction, flattery,
+          simony, sorcery, corruption, hypocrisy, theft, deception, sowers of
+          discord, and falsifiers.
+        </p>
+      </div>
+
+      <!-- Bento Box 10 -->
+      <div class="bento-box">
+        <h1>Treachery</h1>
+        <p>
+          In the deepest part of Hell, Dante encounters those guilty of
+          treachery, including betrayers of family, country, guests, and
+          benefactors. They are trapped in a frozen lake known as Cocytus, each
+          encased in ice according to the severity of their betrayal.
+        </p>
+      </div>
+    </main>
+    <!-- FOOTER -->
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row center">
+            <div class="footer-section">
+              <h2>About</h2>
+              <ul class="footer-links">
+                <li>
+                  <a href="./MaximusEntertainment_AboutUS.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./MaximusEntertainment-GameStory.html">About Game</a>
+                </li>
+                <li><a href="#">Support Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <a
+                href="https://www.instagram.com/maxi_vision_3d/"
+                class="social-button instagram-btn"
+                >Instagram</a
+              >
+              <a
+                href="https://maximpochyba8.artstation.com"
+                class="social-button artstation-btn"
+                >Artstation</a
+              >
+            </div>
+          </div>
+          <div class="row center">
+            <div class="copyright-section">
+              <p class="copyright">MaximusEntertainment © 2024</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

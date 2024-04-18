@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="maxim_pochyba" />
+    <title>MaximusEntertainment</title>
+    <link rel="stylesheet" href="Entertainment_OurProgress.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") x.style.display = "none";
+        else x.style.display = "block";
+      }
+      function toggleDantesGameDropdown() {
+        var dropdown = document.getElementById("dantesGameDropdown");
+        if (dropdown.style.display === "block") dropdown.style.display = "none";
+        else dropdown.style.display = "block";
+      }
+
+      var slideIndex = {};
+
+      function plusSlides(n, slideshow) {
+        showSlides((slideIndex[slideshow] += n), slideshow);
+      }
+
+      function currentSlide(n, slideshow) {
+        showSlides((slideIndex[slideshow] = n), slideshow);
+      }
+
+      function showSlides(n, slideshow) {
+        var i;
+        var slides = document
+          .getElementById(slideshow)
+          .getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+          slideIndex[slideshow] = 1;
+        }
+        if (n < 1) {
+          slideIndex[slideshow] = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex[slideshow] - 1].style.display = "block";
+      }
+
+      // initialise the slideshows
+      window.onload = () => {
+        let slideshows = [
+          "slideshow1",
+          "slideshow2",
+          "slideshow3",
+          "slideshow4",
+        ];
+
+        for (let i = 0; i < slideshows.length; i++) {
+          slideIndex[slideshows[i]] = 1;
+          showSlides(1, slideshows[i]);
+        }
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- NAV for MOBILE -->
+    <div class="mobile-container">
+      <div
+        class="topnav"
+        id="myTopnav"
+        role="navigation"
+        aria-label="mobile navigation"
+      >
+        <a href="./MaximusEntertainment.html" class="active" alt="Home">
+          <img
+            src="./LOGO/logo02.webp"
+            alt="Company Logotype"
+            class="Header_mobile_logo"
+            aria-label="Company logo"
+          />
+        </a>
+        <div id="myLinks">
+          <a
+            href="./MaximusEntertainment_OurProgress.html"
+            aria-label="Our progress"
+            >Our Progress</a
+          >
+          <button
+            class="dropbtn"
+            onclick="toggleDantesGameDropdown()"
+            aria-haspopup="true"
+            aria-controls="dantesGameDropdown"
+          >
+            Dante's Game
+          </button>
+          <div id="dantesGameDropdown" class="dropdown-content" role="menu">
+            <a
+              href="./MaximusEntertainment-GameStory.html"
+              aria-label="Game story"
+              >Game Story</a
+            >
+            <a
+              href="./MaximusEntertainment-Hero-Boss.html"
+              aria-label="Hero/Bosses"
+              >Hero/Bosses</a
+            >
+          </div>
+          <a href="./MaximusEntertainment_AboutUS.html" aria-label="About us"
+            >About Us</a
+          >
+          <a
+            href="./MaximusEntertainment-SupportUs.html"
+            aria-label="Support us"
+            >Support Us</a
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="toggleNav()"
+          role="button"
+          aria-label="Toggle menu"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- NAV for PC -->
+
+    <header role="banner">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="./MaximusEntertainment.html" class="logo-link">
+            <img
+              src="./LOGO/logo02.webp"
+              alt="Company Logotype"
+              class="Headerlogo"
+              aria-label="Company logo"
+            />
+          </a>
+        </div>
+        <div class="button-container">
+          <div class="button-group-left">
+            <a
+              class="button"
+              href="./MaximusEntertainment_OurProgress.html"
+              aria-label="Our progress"
+              >Our Progress</a
+            >
+            <div class="dropdown">
+              <button
+                class="dropbtn"
+                aria-haspopup="true"
+                aria-controls="mainDropdownContent"
+              >
+                Dante's Game
+              </button>
+              <div
+                class="dropdown-content"
+                id="mainDropdownContent"
+                role="menu"
+              >
+                <a
+                  href="./MaximusEntertainment-GameStory.html"
+                  aria-label="Game story"
+                  >Game Story</a
+                >
+                <a
+                  href="./MaximusEntertainment-Hero-Boss.html"
+                  aria-label="Hero/Bosses"
+                  >Hero/Bosses</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="button-group-right">
+            <a
+              class="button"
+              href="./MaximusEntertainment_AboutUS.html"
+              aria-label="About us"
+              >About Us</a
+            >
+            <a
+              class="button support-button"
+              href="./MaximusEntertainment-SupportUs.html"
+              aria-label="Support us"
+              >Support Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <div class="main-container">
+      <div class="image-container" role="img" aria-label="Background Image">
+        <div class="zigzag-image-container">
+          <img
+            src="./images_for_website/zigzag_Web_01.png"
+            class="zigzag-image"
+            alt="Zigzag Image"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="main-text">
+          <h1>Our Progress</h1>
+          <h3>Projects We Finished and Whats Next</h3>
+        </div>
+        <div class="scroll-indicator">&#x25BC;</div>
+      </div>
+    </div>
+    <!-- Slideshow 1 -->
+    <div class="slideshow-container" id="slideshow1">
+      <div class="slideshow-description">
+        <h1 class="slideshow-title">Wraithwing Seraph Sword</h1>
+        <p class="slideshow-text">
+          In the depths of Hell rests the Wraithwing Seraph Sword, a cursed
+          blade forged by demonic hands. Deceptively unassuming, it resembles a
+          long dagger, its wavering edge concealing whispers of agony and
+          despair.
+        </p>
+      </div>
+      <div class="mySlides fade showSlide">
+        <img src="./images_for_website/zigzag_Web_04.png" alt="skull-sword" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/zigzag_Web_03.png" alt="skull-sword" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/zigzag_Web_02.png" alt="skull-sword" />
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'slideshow1')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'slideshow1')">&#10095;</a>
+
+      <!-- Dot indicators -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow1')"></span>
+      </div>
+    </div>
+
+    <!-- Slideshow 2 -->
+    <div class="slideshow-container" id="slideshow2">
+      <div class="slideshow-description">
+        <h1 class="slideshow-title">Stygian Axe</h1>
+        <p class="slideshow-text">
+          In a realm where mortal and immortal converge, the Forge Master sought
+          to create a weapon of unmatched might. At the banks of the River Styx,
+          he forged the Stygian Axe from steel infused with underworld essence.
+          With each strike, its deadly venomous blade took shape, capable of
+          vanquishing even the mightiest of demons. As the forge flames faded,
+          the Axe gleamed ominously, a testament to mortal ambition and the
+          allure of forbidden magic.
+        </p>
+      </div>
+      <div class="mySlides fade showSlide">
+        <img src="./images_for_website/axe_Web_03.png" alt="skull-axe" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/axe_Web_04.png" alt="skull-axe" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/axe_Web_01.png" alt="skull-axe" />
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+
+      <!-- Dot indicators -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+      </div>
+    </div>
+
+    <!-- Slideshow 3-->
+    <div class="slideshow-container" id="slideshow3">
+      <div class="slideshow-description">
+        <h1 class="slideshow-title">Starfall Exile</h1>
+        <p class="slideshow-text">
+          In the celestial realm, Auriel, neither fully angel nor entirely
+          demon, forged the Starfall Exile from the convergence of light and
+          darkness. Once an esteemed angel, Auriel's fall into bitterness led to
+          the creation of this weapon of vengeance, imbued with celestial purity
+          and infernal corruption. However, as the sword's power consumed them,
+          Auriel sought redemption, wielding the Starfall Exile as a symbol of
+          hope and reconciliation. Thus, the blade became more than a weapon—it
+          became a testament to Auriel's journey from darkness to light.
+        </p>
+      </div>
+      <div class="mySlides fade showSlide">
+        <img src="./images_for_website/2handed_Web_01.png" alt="2handedsword" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/2handed_Web_02.png" alt="2handedsword" />
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
+
+      <!-- Dot indicators -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+      </div>
+    </div>
+
+    <!-- Slideshow 4 -->
+    <div class="slideshow-container" id="slideshow4">
+      <div class="slideshow-description">
+        <h1 class="slideshow-title">M9_BAYONET</h1>
+        <p class="slideshow-text">
+          Driven by a relentless quest for redemption, our hero navigates the
+          infernal landscape of Hell, seeking salvation amid chaos and torment.
+          Amidst relics of a distant future, he discovers a bayonet of menacing
+          design, its blade infused with dark energies. Sensing its power, he
+          grasps the weapon, feeling the echoes of distant battles resonating
+          within its steel.
+        </p>
+      </div>
+      <div class="mySlides fade showSlide">
+        <img src="./images_for_website/bayonet_web03.png" alt="bayonet" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/bayonet_web02.png" alt="bayonet" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images_for_website/bayonet_web01.png" alt="bayonet" />
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'slideshow4')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'slideshow4')">&#10095;</a>
+
+      <!-- Dot indicators -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1, 'slideshow4')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow4')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow4')"></span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row center">
+            <div class="footer-section">
+              <h2>About</h2>
+              <ul class="footer-links">
+                <li>
+                  <a href="./MaximusEntertainment_AboutUS.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./MaximusEntertainment-GameStory.html">About Game</a>
+                </li>
+                <li><a href="#">Support Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <a
+                href="https://www.instagram.com/maxi_vision_3d/"
+                class="social-button instagram-btn"
+                >Instagram</a
+              >
+              <a
+                href="https://maximpochyba8.artstation.com"
+                class="social-button artstation-btn"
+                >Artstation</a
+              >
+            </div>
+          </div>
+          <div class="row center">
+            <div class="copyright-section">
+              <p class="copyright">MaximusEntertainment © 2024</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

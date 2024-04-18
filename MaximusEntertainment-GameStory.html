@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="maxim_pochyba" />
+    <title>MaximusEntertainment</title>
+    <link rel="stylesheet" href="Entertainment-GameStory.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") x.style.display = "none";
+        else x.style.display = "block";
+      }
+      function toggleDantesGameDropdown() {
+        var dropdown = document.getElementById("dantesGameDropdown");
+        if (dropdown.style.display === "block") dropdown.style.display = "none";
+        else dropdown.style.display = "block";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- NAV for MOBILE -->
+    <div class="mobile-container">
+      <div
+        class="topnav"
+        id="myTopnav"
+        role="navigation"
+        aria-label="mobile navigation"
+      >
+        <a href="./MaximusEntertainment.html" class="active" alt="Home">
+          <img
+            src="./LOGO/logo02.webp"
+            alt="Company Logotype"
+            class="Header_mobile_logo"
+            aria-label="Company logo"
+          />
+        </a>
+        <div id="myLinks">
+          <a
+            href="./MaximusEntertainment_OurProgress.html"
+            aria-label="Our progress"
+            >Our Progress</a
+          >
+          <button
+            class="dropbtn"
+            onclick="toggleDantesGameDropdown()"
+            aria-haspopup="true"
+            aria-controls="dantesGameDropdown"
+          >
+            Dante's Game
+          </button>
+          <div id="dantesGameDropdown" class="dropdown-content" role="menu">
+            <a
+              href="./MaximusEntertainment-GameStory.html"
+              aria-label="Game story"
+              >Game Story</a
+            >
+            <a
+              href="./MaximusEntertainment-Hero-Boss.html"
+              aria-label="Hero/Bosses"
+              >Hero/Bosses</a
+            >
+          </div>
+          <a href="./MaximusEntertainment_AboutUS.html" aria-label="About us"
+            >About Us</a
+          >
+          <a
+            href="./MaximusEntertainment-SupportUs.html"
+            aria-label="Support us"
+            >Support Us</a
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="toggleNav()"
+          role="button"
+          aria-label="Toggle menu"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- NAV for PC -->
+
+    <header role="banner">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="./MaximusEntertainment.html" class="logo-link">
+            <img
+              src="./LOGO/logo02.webp"
+              alt="Company Logotype"
+              class="Headerlogo"
+              aria-label="Company logo"
+            />
+          </a>
+        </div>
+        <div class="button-container">
+          <div class="button-group-left">
+            <a
+              class="button"
+              href="./MaximusEntertainment_OurProgress.html"
+              aria-label="Our progress"
+              >Our Progress</a
+            >
+            <div class="dropdown">
+              <button
+                class="dropbtn"
+                aria-haspopup="true"
+                aria-controls="mainDropdownContent"
+              >
+                Dante's Game
+              </button>
+              <div
+                class="dropdown-content"
+                id="mainDropdownContent"
+                role="menu"
+              >
+                <a
+                  href="./MaximusEntertainment-GameStory.html"
+                  aria-label="Game story"
+                  >Game Story</a
+                >
+                <a
+                  href="./MaximusEntertainment-Hero-Boss.html"
+                  aria-label="Hero/Bosses"
+                  >Hero/Bosses</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="button-group-right">
+            <a
+              class="button"
+              href="./MaximusEntertainment_AboutUS.html"
+              aria-label="About us"
+              >About Us</a
+            >
+            <a
+              class="button support-button"
+              href="./MaximusEntertainment-SupportUs.html"
+              aria-label="Support us"
+              >Support Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <div class="main-content">
+      <main id="story-main" role="main" aria-labelledby="story-header">
+        <h1 id="story-header">Embark on a Journey of Redemption</h1>
+        <div class="story-container">
+          <ul>
+            <li>
+              In the aftermath of a brutal war, our hero returns home weary and
+              battle-worn, seeking solace amidst the chaos of conflict.
+            </li>
+            <li>
+              Yet, his homecoming is met with tragedy as he is beset by a pack
+              of savage wolves.
+            </li>
+            <li>
+              With sword in hand, he fights valiantly to defend himself, but the
+              onslaught is relentless.
+            </li>
+            <li>
+              Amidst the bloodshed, our hero's heart breaks as he witnesses his
+              beloved wife fall victim to the ferocious beasts.
+            </li>
+            <li>
+              With her dying breath, she whispers words of comfort and
+              assurance, promising to wait for him in the heavens above.
+            </li>
+            <li>
+              Consumed by grief and despair, our hero carries his wife's
+              lifeless body in his arms as he ventures forth into the unknown.
+            </li>
+            <li>
+              Along the way, he encounters the First Boss—a monstrous entity, a
+              three-headed beast of unfathomable power.
+            </li>
+            <li>
+              Despite his best efforts, the hero is no match for the creature's
+              relentless onslaught.
+            </li>
+            <li>
+              As death's embrace beckons, our hero finds himself on the
+              precipice of damnation.
+            </li>
+            <li>
+              With the gates of hell looming before him, he glimpses the
+              entrance to the underworld—a yawning chasm of darkness and
+              despair, its gaping maw eager to swallow him whole.
+            </li>
+            <li>
+              With a heavy heart and a soul weighed down by sorrow, our hero
+              braces himself for the journey ahead, determined to conquer the
+              trials that await in the depths of hell.
+            </li>
+            <li>
+              For he knows that beyond the fires of torment lies the promise of
+              redemption, and the chance to reunite with his beloved once more
+              in the eternal embrace of heaven.
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER -->
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row center">
+            <div class="footer-section">
+              <h2>About</h2>
+              <ul class="footer-links">
+                <li>
+                  <a href="./MaximusEntertainment_AboutUS.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./MaximusEntertainment-GameStory.html">About Game</a>
+                </li>
+                <li><a href="#">Support Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <a
+                href="https://www.instagram.com/maxi_vision_3d/"
+                class="social-button instagram-btn"
+                >Instagram</a
+              >
+              <a
+                href="https://maximpochyba8.artstation.com"
+                class="social-button artstation-btn"
+                >Artstation</a
+              >
+            </div>
+          </div>
+          <div class="row center">
+            <div class="copyright-section">
+              <p class="copyright">MaximusEntertainment © 2024</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

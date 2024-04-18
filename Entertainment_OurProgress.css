@@ -1,0 +1,522 @@
+html {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100%;
+  background-color: #000000;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVIGATION FOR DESKTOP */
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group-left,
+.button-group-right {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropbtn {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.760);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.logo-link {
+  width: 50%;
+  max-width: 300px;
+}
+
+.Headerlogo,
+.Header_mobile_logo {
+  display: block;
+  max-width: 100%;
+  max-height: 75px;
+  height: auto;
+}
+
+.Headerlogo {
+  display: none;
+}
+
+.support-button {
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.support-button:hover,
+.support-button:focus {
+  background-color: #00ff6a;
+}
+/* NAVIGATION FOR MOBILE */
+
+.mobile-container {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-container {
+    display: block; 
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #060606;
+    position: relative;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: rgba(23, 197, 60, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover,
+  .topnav a:focus {
+    background-color: #dddddd10;
+    color: rgb(255, 255, 255);
+  }
+
+  .active {
+    background-color: #000000;
+    color: white;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.764);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Headerlogo {
+    display: none;
+  }
+  .Header_mobile_logo {
+    display: block;
+    max-width: 100%;
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Headerlogo {
+    display: block;
+    max-width: 100%;
+    max-height: 75px;
+  }
+  .Header_mobile_logo {
+    display: none;
+  }
+}
+
+/* MAIN */
+
+.image-container {
+  position: relative;
+  height: 75vh;  /* Adjust height as needed */
+  text-align: center;
+  color: white;
+  background-image: url(./images_for_website/background01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns items in the middle */
+  align-items: center;
+  overflow: hidden;  /* Prevents child elements from overflowing */
+}
+
+/* SCROLLINDICATOR*/
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+}
+
+.zigzag-image-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zigzag-image {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4); /* 0.4 can be adjusted to make the image darker or lighter */
+  height: 100%;
+  width: 100%;
+}
+
+.main-text {
+  z-index: 2;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 15px;  /* add padding */
+  font-size: 2em;
+}
+
+/* slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.main-text, .slideshow-description {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  word-wrap: break-word; /* Prevents the text from overflowing out of the box */
+}
+
+/* Slideshow description */
+
+.slideshow-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white; 
+  padding: 15px; /* Add padding */
+}
+.slideshow-description h1 {
+  font-size: 3em;  /* base font size */
+}
+
+.slideshow-description p {
+  font-size: 1.2em;  /* base font size */
+}
+
+/* Responsive Text For Different Devices */
+@media screen and (max-width: 768px) {
+  .slideshow-description h1 {
+      font-size: max(2em, 1.5vmin);  /* The font size will be larger of 2em or 1.5vmin */
+  }
+
+  .slideshow-description p {
+      font-size: max(1em, 1vmin);  /* The font size will be larger of 1em or 1vmin */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slideshow-description h1 {
+      font-size: max(1.5em, 1vmin);  /* The font size will be larger of 1.5em or 1vmin */
+  }
+
+  .slideshow-description p {
+      font-size: max(1.2em, 1vmin);  /* The font size will be larger of 0.8em or 0.7vmin */
+  }
+}
+/* END OF - Slideshow description */
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  display: none;
+  width: 100%;
+}
+
+.showSlide {
+  display: block;
+}
+
+.slideshow-container .mySlides {
+  display: none;
+}
+
+/* Show first slides of each slideshow */
+.slideshow-container:first-child .mySlides:first-child {
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* FOOTER */
+
+.footer-clean {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(24, 24, 24) 100%);
+  color: #ffffff;
+}
+
+.footer-clean h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.footer-links {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.social-button {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #cccccc00;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  text-decoration: none;
+}
+.instagram-btn,
+.artstation-btn {
+  font-size: 16px; /* Increase font size for Instagram and Artstation buttons */
+}
+
+.social-button:hover {
+  opacity: 0.9;
+  border: 1px solid #cccccc;
+}
+
+.instagram-btn:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.artstation-btn:hover {
+  background-color: rgb(46, 79, 199);
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section + .footer-section {
+  margin-top: 20px;
+}
+
+.footer-section:last-child {
+  margin-top: 40px;
+}
+
+.footer-section:last-child a {
+  margin-right: 0;
+}
+
+.copyright-section {
+  text-align: center;
+}

@@ -1,0 +1,522 @@
+html {
+  height: 100%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    background-color: #000000;
+}
+
+
+/* Center the button container with the logo */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust button group styles */
+.button-group-left,
+.button-group-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Update button styles */
+.button {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin: 0 5px; /* Add equal margin to all sides */
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropbtn {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin-right: 5px; /* Add equal margin to all sides */
+}
+
+.dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.760);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Center the logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.logo-link {
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Logos */
+.Headerlogo,
+.Header_mobile_logo {
+  display: block;
+  max-width: 100%;
+  max-height: 75px; /* Limit the height of the logo */
+  height: auto;
+}
+
+.Headerlogo {
+  display: none;
+}
+
+.support-button {
+  padding: 10px 20px;
+  color: black; /* Change text color to black */
+  background-color: rgb(255, 255, 255); /* Change background color to white */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.support-button:hover {
+  background-color: 		#00ff6a;
+}
+
+/* Highlight focus on buttons and links */
+a:focus, button:focus {
+  outline: 2px solid #00d6fc; /* You may change the color value according to your website's color schema */
+}
+
+
+
+
+/* Mobile Navigation */
+
+.mobile-container {
+  display: none; /* Hide mobile navigation by default */
+}
+
+/* Add CSS for responsive design */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-container {
+    display: block; /* Show mobile navigation on smaller screens */
+  }
+
+  .button-container {
+    display: none; /* Hide button container on smaller screens */
+  }
+
+  /* Add styles for the mobile navigation */
+  .topnav {
+    overflow: hidden;
+    background-color: #060606;
+    position: relative;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: rgba(0, 0, 0, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #dddddd10;
+    color: rgb(255, 255, 255);
+  }
+
+  .active {
+    background-color: #000000;
+    color: white;
+  }
+
+  /* Remove display: none from dropdown content */
+  .dropdown-content {
+    display: none; /* Hide dropdown content by default on smaller screens */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.764);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 100px; /* Position the dropdown content next to the button */
+  }
+}
+
+/* Show/Hide logos based on screen size */
+@media screen and (max-width: 768px) {
+  .Headerlogo {
+    display: none;
+  }
+  .Header_mobile_logo {
+    display: block;
+    max-width: 100%;
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Headerlogo {
+    display: block;
+    max-width: 100%;
+    max-height: 75px;
+  }
+  .Header_mobile_logo {
+    display: none;
+  }
+}
+
+
+/* main resp. hlavny obsahh */
+
+.parallax {
+  display: flex; /* Added flex display */
+  flex-direction: column; /* Added column direction */
+  justify-content: flex-end; /* Align children to the end/bottom */
+  background-image: url("./images_for_website/helma.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.main_container {
+  padding-bottom: 50px;
+  padding-left: 5%; 
+  padding-right: 5%; 
+  color: white;
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  strong{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main_container h1,
+.main_container a {
+  color: azure;
+  text-align: center;
+}
+
+.main_container p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.main_container h1 {
+  font-size: 69px;
+}
+
+.custom-button {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  
+}
+
+
+
+.custom-button:hover {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+  .main_container h1 {
+    font-size: 48px; /* Reduced font size */
+  }
+  
+  .main_container p {
+    font-size: 18px; /* Reduced font size */
+  }
+  
+  .main_container {
+    padding-bottom: 20px; /* Reduced padding */
+  }
+}
+
+/* CARDS*/
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-height: 300px; /* Change from height to min-height */
+  margin: 0 auto;
+  padding: 20px;
+  background: url('./images_for_website/background01.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.cards img.Background_cards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire space */
+  object-position: center center; /* Aligns the center of the image with the center of the div */
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center; /* Center align on smaller screens */
+  }
+}
+
+/* KARTA02 smer dole*/
+
+.cards_second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-height: 300px; /* Change from height to min-height */
+  margin: 0 auto;
+  padding: 20px;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.cards_second img.Background_cards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire space */
+  object-position: center center; /* Aligns the center of the image with the center of the div */
+}
+
+@media screen and (max-width: 600px) {
+  .cards_second {
+    flex-direction: column;
+    align-items: center; /* Center align on smaller screens */
+  }
+}
+
+.card_img {
+  width: 100%;
+}
+.card_img img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+.card_img,
+.card_text {
+  width: 100%;
+  max-width: 100%; /* Ensure they do not exceed their parent's width */
+}
+
+.card_text {
+  color: white;
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%);
+  padding: 0; /* Remove padding */
+  width: 100%; /* Change from 80% to 100% to fill parent */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.card_text h1{
+  font-size: 69px; /* use viewport widths to dynamically scale text based on viewport size */
+}
+
+.card_text p{
+  font-size: 20px;
+}
+
+.learn-more {
+  text-decoration: none;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-self: center; /* Center the button */
+  transition-duration: 0.4s;
+  
+}
+
+.learn-more:hover {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card_text h1 {
+    font-size: 48px; /* Increase the font size for smaller screens */
+  }
+
+  .card_text p {
+    font-size: 18px; /* Increase the font size for smaller screens */
+  }
+}
+
+/* FOOTER */
+.footer-clean {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(24, 24, 24) 100%);
+  color: #ffffff;
+}
+
+.footer-clean h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.footer-links {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.social-button {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #cccccc00;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  text-decoration: none;
+}
+.instagram-btn,
+.artstation-btn {
+  font-size: 16px; /* Increase font size for Instagram and Artstation buttons */
+}
+
+.social-button:hover {
+  opacity: 0.9;
+  border: 1px solid #cccccc;
+}
+
+.instagram-btn:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.artstation-btn:hover {
+  background-color: rgb(46, 79, 199);
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section + .footer-section {
+  margin-top: 20px;
+}
+
+.footer-section:last-child {
+  margin-top: 40px;
+}
+
+.footer-section:last-child a {
+  margin-right: 0;
+}
+
+.copyright-section {
+  text-align: center;
+}

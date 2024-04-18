@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="maxim_pochyba" />
+    <title>MaximusEntertainment</title>
+    <link rel="stylesheet" href="Entertainment_AboutUs.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") x.style.display = "none";
+        else x.style.display = "block";
+      }
+      function toggleDantesGameDropdown() {
+        var dropdown = document.getElementById("dantesGameDropdown");
+        if (dropdown.style.display === "block") dropdown.style.display = "none";
+        else dropdown.style.display = "block";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- NAV for MOBILE -->
+    <div class="mobile-container">
+      <div
+        class="topnav"
+        id="myTopnav"
+        role="navigation"
+        aria-label="mobile navigation"
+      >
+        <a href="./MaximusEntertainment.html" class="active" alt="Home">
+          <img
+            src="./LOGO/logo02.webp"
+            alt="Company Logotype"
+            class="Header_mobile_logo"
+            aria-label="Company logo"
+          />
+        </a>
+        <div id="myLinks">
+          <a
+            href="./MaximusEntertainment_OurProgress.html"
+            aria-label="Our progress"
+            >Our Progress</a
+          >
+          <button
+            class="dropbtn"
+            onclick="toggleDantesGameDropdown()"
+            aria-haspopup="true"
+            aria-controls="dantesGameDropdown"
+          >
+            Dante's Game
+          </button>
+          <div id="dantesGameDropdown" class="dropdown-content" role="menu">
+            <a
+              href="./MaximusEntertainment-GameStory.html"
+              aria-label="Game story"
+              >Game Story</a
+            >
+            <a
+              href="./MaximusEntertainment-Hero-Boss.html"
+              aria-label="Hero/Bosses"
+              >Hero/Bosses</a
+            >
+          </div>
+          <a href="./MaximusEntertainment_AboutUS.html" aria-label="About us"
+            >About Us</a
+          >
+          <a
+            href="./MaximusEntertainment-SupportUs.html"
+            aria-label="Support us"
+            >Support Us</a
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="toggleNav()"
+          role="button"
+          aria-label="Toggle menu"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- NAV for PC -->
+
+    <header role="banner">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="./MaximusEntertainment.html" class="logo-link">
+            <img
+              src="./LOGO/logo02.webp"
+              alt="Company Logotype"
+              class="Headerlogo"
+              aria-label="Company logo"
+            />
+          </a>
+        </div>
+        <div class="button-container">
+          <div class="button-group-left">
+            <a
+              class="button"
+              href="./MaximusEntertainment_OurProgress.html"
+              aria-label="Our progress"
+              >Our Progress</a
+            >
+            <div class="dropdown">
+              <button
+                class="dropbtn"
+                aria-haspopup="true"
+                aria-controls="mainDropdownContent"
+              >
+                Dante's Game
+              </button>
+              <div
+                class="dropdown-content"
+                id="mainDropdownContent"
+                role="menu"
+              >
+                <a
+                  href="./MaximusEntertainment-GameStory.html"
+                  aria-label="Game story"
+                  >Game Story</a
+                >
+                <a
+                  href="./MaximusEntertainment-Hero-Boss.html"
+                  aria-label="Hero/Bosses"
+                  >Hero/Bosses</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="button-group-right">
+            <a
+              class="button"
+              href="./MaximusEntertainment_AboutUS.html"
+              aria-label="About us"
+              >About Us</a
+            >
+            <a
+              class="button support-button"
+              href="./MaximusEntertainment-SupportUs.html"
+              aria-label="Support us"
+              >Support Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <div class="AboutUs">
+      <div class="mainimg_container" role="img" aria-label="Office image"></div>
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          Devoted to crafting games that bring joy and excitement to
+          <strong>YOU</strong>, our players.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="./images_for_website/košice.jpg" alt="Košice" />
+      </div>
+      <div class="card-text">
+        <h1>Our Story</h1>
+        <p>
+          "Dive into our world of game development, based in Košice, Slovakia.
+          With our debut game underway, we're driven by a passion for creating
+          captivating experiences. <br /><br />Our mission? <br />To finish our
+          first game, establish our own gaming company, and entertain players
+          worldwide."
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row center">
+            <div class="footer-section">
+              <h2>About</h2>
+              <ul class="footer-links">
+                <li>
+                  <a href="./MaximusEntertainment_AboutUS.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./MaximusEntertainment-GameStory.html">About Game</a>
+                </li>
+                <li><a href="#">Support Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <a
+                href="https://www.instagram.com/maxi_vision_3d/"
+                class="social-button instagram-btn"
+                >Instagram</a
+              >
+              <a
+                href="https://maximpochyba8.artstation.com"
+                class="social-button artstation-btn"
+                >Artstation</a
+              >
+            </div>
+          </div>
+          <div class="row center">
+            <div class="copyright-section">
+              <p class="copyright">MaximusEntertainment © 2024</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
